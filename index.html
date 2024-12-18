@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="--clr: #0f0;"></div>
+        <div class="box" style="--clr: #ff9;"></div>
+        <div class="box" style="--clr: #f56;"></div>
+        <div class="box" style="--clr: #f9f;"></div>
+        <div class="box" style="--clr: #f45;"></div>
+        <div class="box" style="--clr: #0ff;"></div>
+        <div class="box" style="--clr: #f90;"></div>
+        <div class="box" style="--clr: #ff0f;"></div>
+        <div class="box" style="--clr: #0f0;"></div>
+        <div class="box" style="--clr: #f08;"></div>
+        <div class="box" style="--clr: #f0f;"></div>
+        <div class="box" style="--clr: #ff0;"></div>
+        <!-- <div class="box" style="--clr: #0f0;"></div>
+        <div class="box" style="--clr: #00f;"></div>
+        <div class="box" style="--clr: #f90;"></div> -->
+    </div>
+
+    <div class="login">
+        <h2>Login </h2>
+        <div class="inputBox">
+            <input type="text" required>
+            <span>Username</span>
+        </div>
+        <div class="inputBox">
+                <input type="password" required>
+                <span>Password</span>   
+        </div>
+        <div class="inputBox">
+            <a href="#" class="btn">Sign in</a>
+        </div>        
+        <div class="group">
+            <a href="#">Forget password</a>
+            <a href="#">Sign up</a>
+        </div>
+    </div>
+
+    <script>
+        let boxes = document.querySelectorAll('.box');
+        boxes.forEach(box =>{
+            box.onmousemove = function(e){
+                let x = e.pageX - box.offsetLeft;
+                let y = e.pageY - box.offsetTop;
+
+                box.style.setProperty('--x', x + 'px');
+                box.style.setProperty('--y', y + 'px');
+            }
+        })
+
+    </script>
+</body>
+</html>
