@@ -4,7 +4,7 @@ A visually appealing and modern login page designed with colorful hover effects 
 
 ## Preview
 Check out the live demo here:  
-[Modern Login Page](https://prak-ash-m.github.io/Modern-Login-Page/)
+[Modern Login Page](https://prak-ash-m.github.io/Modern_Login/)
 
 ## Features
 - **Modern Design**: A sleek, colorful login interface.
